@@ -96,6 +96,7 @@ const TodoList = () => {
         updateTodo={updateTodo}
         handleTimeChange={handleTimeChange}
       />
+      <hr />
       <ul className="ul-list">
         {filterItems.map((f) => (
           <li
