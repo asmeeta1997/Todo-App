@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+  }
+  
+  body {
+    background: #eee;
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 520px;
+    margin: 30px auto;
+    background-color: #FFF;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color:black;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 12px 28px 12px 14px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #7a7a7a;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(8, 8, 8);
+  }
+  
+  .todo-input::placeholder {
+    color:black;
+  }
+
+  .todo-button {
+    margin-left:5px;
+    padding: 14px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    background: gray;
+    color: black;
+  }
+
+  .date-picker{
+    width: 95px;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo-button.edit {
+    background: rgb(111, 147, 190) ;
+    padding: 14px 20px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px auto;
+    color: black;
+    background: gray;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
+  .ul-list{
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #7a7a7a;
+  }
+
+  .li-list{
+    display: flex;
+    justify-content: center;
+    padding:7px;
+    margin:5px;
+    color: black;
+    font-size: 15px;
+    width:100px;
+  }
+  .active{
+    border-style: solid;
+    border-color: rgb(6, 102, 6) ;
+    background-color: rgb(25, 110, 25);
+  }
+
+  @media only screen and (max-width: 600px) {
+   .todo-app{
+       width: 95%;
+   }
+  }
